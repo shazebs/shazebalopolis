@@ -6,20 +6,8 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import {
-  InteractionType,
-  PublicClientApplication,
-  BrowserCacheLocation,
-  LogLevel
-} from '@azure/msal-browser';
-
-import {
-  MsalModule,
-  MsalGuard,
-  MsalInterceptor,
-  MsalRedirectComponent
-} from '@azure/msal-angular';
-
+import { InteractionType, PublicClientApplication, BrowserCacheLocation, LogLevel } from '@azure/msal-browser';
+import { MsalModule, MsalGuard, MsalInterceptor, MsalRedirectComponent } from '@azure/msal-angular';
 
 @NgModule({
   declarations: [
