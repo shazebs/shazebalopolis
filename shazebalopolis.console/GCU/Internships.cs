@@ -46,12 +46,12 @@ namespace shazebalopolis.console.GCU
             { "Nintendo of America Inc.: GPU Tools Software Engineer (NTD), Redmond Washington, $40/hr, C#", "APPLIED--1/22/2022" },
             { "ByteDance: Software Engineer Intern (XR Engine adn Runtime), Mountain View California, $75.7k-$95.9k, C#", "NOT APPLIED--1/22/2022" },
             { "UiPath: Software Engineer Intern, Bellevue Washington, $68.7k-$86.9k, C#", "APPLIED--1/22/2022" },
-            { "Fastly: Software Engineer Intern, San Francisco California, $30-$35, JavaScript", "APPLIED--1/22/2022" },
+            { "Fastly: Software Engineer Intern, San Francisco California, $30-$35, JavaScript", "REJECTED--1/22/2022" },
             { "Meta: Front End Engineer Intern, New York NY, $82k-$104k, JavaScript", "APPLIED--1/22/2022" },
             { "Spotify: Back End Engineer Intern, New York NY, $33, JavaScript", "APPLIED--1/22/2022" },
             { "Discord: Back End Engineer Intern - Native Framework & Tools, Remote San Francisco California, $67, JavaScript", "APPLIED--1/22/2022" },
-            { "CLEAR: Software Engineer Intern (Intern Cohort), Austin Texas, $55.7k-$70.5k, JavaScript", "APPLIED--1/22/2022" },
-            { "General Motors: Software Engineer Intern, Warren Michigan, $54.2k-$68.7k, JavaScript", "APPLIED--1/22/2022" },
+            { "CLEAR: Software Engineer Intern (Intern Cohort), Austin Texas, $55.7k-$70.5k, JavaScript", "REJECTED--1/22/2022" },
+            { "General Motors: Software Engineer Intern, Warren Michigan, $54.2k-$68.7k, JavaScript", "REJECTED--1/22/2022" },
             { "FanDuel: Software Engineer Intern, Atlanta Georgia, $104k-$132k, JavaScript", "APPLIED--1/22/2022" },
             { "West Monroe: Software Engineer Intern - Product Experience & Engineering Lab, Remote United States, $39, JavaScript", "NOT APPLIED--1/22/2022" },
             { "Zoox: Frontend Software Engineer Intern - Driving Tools, Foster City California, $6,500-$9,500, JavaScript", "NOT APPLIED--1/22/2022" },
@@ -107,8 +107,8 @@ namespace shazebalopolis.console.GCU
         /// <param name="internships"></param>
         public static void GetApplied(string category = "APPLIED")
         {
-            Console.WriteLine($"// {category}"); 
             var pending = internships.Where(x => x.Value.StartsWith(category)); 
+            Console.WriteLine($"// {category}"); 
             var count = 1; 
             foreach (var x in pending)
             {
@@ -118,7 +118,7 @@ namespace shazebalopolis.console.GCU
                 Console.ResetColor();
                 DisplayDate(x.Value); 
             }
-            Console.WriteLine();
+            Console.WriteLine($" = {(((double)count / internships.Count()) * 100).ToString("F2")}%\n");
         }
 
         /// <summary>
@@ -127,8 +127,8 @@ namespace shazebalopolis.console.GCU
         /// <param name="internships"></param>
         public static void GetNotApplied(string category = "NOT APPLIED")
         {
-            Console.WriteLine($"// {category}");
             var options = internships.Where(x => x.Value.StartsWith(category));
+            Console.WriteLine($"// {category}");
             var count = 1;
             foreach (var x in options)
             {
@@ -138,7 +138,8 @@ namespace shazebalopolis.console.GCU
                 Console.ResetColor();
                 DisplayDate(x.Value);
             }
-            Console.WriteLine();
+            var hello = count / internships.Count();
+            Console.WriteLine($" = {(((double)count / internships.Count())*100).ToString("F2")}%\n");
         }
 
         /// <summary>
@@ -147,8 +148,8 @@ namespace shazebalopolis.console.GCU
         /// <param name="internships"></param>
         public static void GetRejectedApps(string category = "REJECTED")
         {
-            Console.WriteLine($"// {category}");
             var rejections = internships.Where(x => x.Value.StartsWith(category));
+            Console.WriteLine($"// {category}");
             var count = 1;
             foreach (var x in rejections)
             {
@@ -158,7 +159,7 @@ namespace shazebalopolis.console.GCU
                 Console.ResetColor();
                 DisplayDate(x.Value);
             }
-            Console.WriteLine();
+            Console.WriteLine($" = {(((double)count / internships.Count()) * 100).ToString("F2")}%\n");
         }
 
         public static void DisplayDate(string value)
