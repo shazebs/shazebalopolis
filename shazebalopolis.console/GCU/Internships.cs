@@ -7,7 +7,7 @@ namespace shazebalopolis.console.GCU
     {
         public static Dictionary<string, string> internships = new Dictionary<string, string>
         {
-            { "Dropbox: $8,500 per month, Remote, iOS/Android", "NOT APPLIED" },
+            { "Dropbox: $8,500 per month, Remote, iOS/Android", "APPLIED--1/30/2023" },
             { "Viasat: Remote, Carlsbad California, up to $74.1k/year, VICE Team ", "APPLIED" },
             { "Sony Playstation: ", "NOT APPLIED" },
             { "Instagram: ", "NOT APPLIED" },
@@ -55,8 +55,43 @@ namespace shazebalopolis.console.GCU
             { "FanDuel: Software Engineer Intern, Atlanta Georgia, $104k-$132k, JavaScript", "APPLIED--1/22/2022" },
             { "West Monroe: Software Engineer Intern - Product Experience & Engineering Lab, Remote United States, $39, JavaScript", "NOT APPLIED--1/22/2022" },
             { "Zoox: Frontend Software Engineer Intern - Driving Tools, Foster City California, $6,500-$9,500, JavaScript", "NOT APPLIED--1/22/2022" },
-        }; 
-        
+            { "Portland General Electric: JavaScript/React, $16.00-$36.00", "APPLIED--1/30/2023" },
+            { "IGT: SWE Intern", "APPLIED--1/30/2023" },
+            { "U.S. Xpress: Software Engineer Intern, C#/JavaScript/Java", "APPLIED--1/30/2023" },
+            { "CCC Intelligent Solutions: Software Engineer Intern, Java/Spring/Angular/Vue", "APPLIED--1/30/2023"},
+            { "S&C Electric Company: Software Test Engineer Intern, Chicago Illinois, C#/JavaScript/Java", "APPLIED--1/30/2023" },
+            { "Mohawk Industries: Systems Developer Intern, Calhoun Georgia", "APPLIED--1/30/2023" },
+            { "Emerson: Software Development Co-op, Eden Prairie Minnesota", "APPLIED--1/30/2023" }
+        };
+
+/*
+
+@ShazebsKingdom96
+
+shazebs7@outlook.com
+
+9097474865
+
+Shazeb Suhail
+
+https://www.shazebs.com
+
+https://www.linkedin.com/in/shazebs
+
+https://www.github.com/shazebs
+
+https://www.shazebs.com/resume
+
+https://www.shazebs.com/homepage.html
+
+https://shazebalopolis.azurewebsites.net
+
+900 N Rural Rd #2086, Chandler, AZ 85226
+
+1547 Flamingo St. Beaumont, CA 92223
+
+*/
+
         /// <summary>
         /// Main Driver method for executing console output.
         /// </summary>
