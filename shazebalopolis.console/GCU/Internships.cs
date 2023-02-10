@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
+using Newtonsoft.Json;
+using shazebalopolis.console.Models;
 
 namespace shazebalopolis.console.GCU
 {
@@ -30,12 +32,12 @@ namespace shazebalopolis.console.GCU
             { "Keysight Technologies: R&D Software Engineer Internship $29.30-$38.32, C#", "APPLIED--1/22/2022" },
             { "W. L. Gore & Associates: 2023 IT Architect Summer Internship, $72 .8k-$92.2k, C#", "APPLIED--1/22/2022" },
             { "Oracle: Software Engineer Intern - UNCF, $66.9k-$84.7k, C#", "NOT APPLIED--1/22/2022" },
-            { "Affinitive: Quality Assurance (QA) Engineer Intern, C#", "APPLIED--1/22/2022" },
+            { "Affinitiv: Quality Assurance (QA) Engineer Intern, C#", "INTERVIEW--1/22/2022" },
             { "PWC (Price Waterhouse Coopers): $56k-$71k, C#", "APPLIED--1/22/2022" },
             { "ECS: $67.7k-$85.7k, C#", "APPLIED--1/22/2022" },
             { "UKG (Ultimate Kronos Group): $65k-$82.3k, C#", "NOT APPLIED--1/22/2022" },
             { "Medidata Solutions: Rave Platform Technology Summer Intern, New York, $34-$37, C#", "APPLIED--1/22/2022" },
-            { "Auctane Careers: Software Engineering Intern, Austin Texas, $59.1k-$74.9k, C#", "APPLIED--1/22/2022" },
+            { "Auctane Careers: Software Engineering Intern, Austin Texas, $59.1k-$74.9k, C#", "REJECTED--1/22/2022" },
             { "Intuitive: Manufacturing Software Engineer Intern, Sunnyvale California, $34-$59, C#", "APPLIED--1/22/2022" },
             { "PACCAR: Software Engineer - Test Engineering, Mount Vernon Washington, $30, C#", "APPLIED--1/22/2022" },
             { "Cvent: Application Security Intern, Tysons Corner Virginia, $65.1k-$82.4k, C#", "APPLIED--1/22/2022" },
@@ -63,6 +65,80 @@ namespace shazebalopolis.console.GCU
             { "Mohawk Industries: Systems Developer Intern, Calhoun Georgia", "APPLIED--1/30/2023" },
             { "Emerson: Software Development Co-op, Eden Prairie Minnesota", "APPLIED--1/30/2023" }
         };
+
+        public static List<Internship> internshipsList = new List<Internship>()
+        {
+            new Internship()
+            {
+                Company = "Yahoo",
+                Hyperlink = "https://ouryahoo.wd5.myworkdayjobs.com/en-US/careers/job/United-States-of-America---Remote/Software-Engineering-Intern_JR0021555?source=Linkedin",
+                Location = "Remote",
+                Requirements = "MS or PhD student, Java (or Scala), Sql/NoSql",
+                SalaryRange = "$45,760.00 - $135,200.00/yr",
+                Status = "NOT APPLIED",
+                Title = "Software Engineering Intern"
+            },
+            new Internship()
+            {
+                Company = "Alarm.com",
+                Hyperlink = "https://boards.greenhouse.io/alarmcom/jobs/6599230002?gh_src=7778490b2us",
+                Location = " Centennial, Colorado",
+                Requirements = "JavaScript, Node.js, Ember.js, C#.NET, SQL Server, iOS, Android",
+                SalaryRange = "$22.00-$32.00",
+                Status = "NOT APPLIED",
+                Title = "Software Engineering Intern"
+            },
+            new Internship()
+            {
+                Company = "UWM",
+                Hyperlink = String.Empty,
+                Location = "",
+                Requirements = "",
+                SalaryRange = "",
+                Status = "APPLIED",
+                Title = ""
+            },
+            new Internship()
+            {
+                Company = "TikTok",
+                Hyperlink = "",
+                Location = "",
+                Requirements = "",
+                SalaryRange = "",
+                Status = "REJECTED",
+                Title = ""
+            },
+            new Internship()
+            {
+                Company = "Oracle",
+                Hyperlink = "",
+                Location = "",
+                Requirements = "",
+                SalaryRange = "",
+                Status = "ninja",
+                Title = ""
+            },
+            new Internship()
+            {
+                Company = "Discord",
+                Hyperlink = "",
+                Location = "",
+                Requirements = "",
+                SalaryRange = "",
+                Status = "NOT APPLIED",
+                Title = ""
+            },
+            new Internship()
+            {
+                Company = "",
+                Hyperlink = "",
+                Location = "",
+                Requirements = "",
+                SalaryRange = "",
+                Status = "",
+                Title = ""
+            },
+        }; 
 
 /*
 
@@ -103,8 +179,41 @@ https://shazebalopolis.azurewebsites.net
                 GetApplied();
                 GetNotApplied();
                 GetRejectedApps();
+                outputInternshipsList(internshipsList);
             }
             else GetAllAppStatus(); 
+        }
+
+        public static void ColorWheel(string status)
+        {
+            if (status == "APPLIED")
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+            }
+            else if (status == "REJECTED")
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+            }
+            else if (status == "NOT APPLIED")
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+            }
+            else Console.ResetColor(); 
+        }
+
+        /// <summary>
+        /// Output formatted results for internships list.
+        /// </summary>
+        /// <param name="internships"></param>
+        public static void outputInternshipsList(List<Internship> internships)
+        {
+            foreach (var e in internships)
+            {
+                ColorWheel(e.Status); 
+                var json = JsonConvert.SerializeObject(e, Formatting.Indented);
+                Console.WriteLine(json);
+            }
+            Console.ResetColor();
         }
 
         public static void GetAllAppStatus()
