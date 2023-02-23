@@ -1,7 +1,6 @@
 <!-- Left-side Pane Menu -->
 <div id="HomeContent" *ngIf="loginDisplay">
 
-
   <section id="SidePaneMenu" class="FlexBox">    
     <div> <span>Timeline</span> </div>
     <div> <span>Profile</span> </div>
@@ -9,7 +8,6 @@
     <div> <span>Messages</span> </div>
     <div> <span>Settings</span> </div>
   </section>
-
 
   <div id="MainTimeline" class="FlexBox">
     <section id="PostContentBox">
@@ -19,7 +17,7 @@
       <div class="PostContent" style="padding-top:0;">
         <form #TweetForm="ngForm" (ngSubmit)="PostTweet()">
           <div class="Username">
-            <span style="color:dodgerblue;">@</span><span class="username"*ngIf="preferred_username">{{ preferred_username }}</span>
+            <span style="color:dodgerblue;">@</span><span class="username" *ngIf="preferred_username">{{ preferred_username }}</span>
           </div>
           <textarea id="Tweet" name="Tweet" [(ngModel)]="tweet.Content" placeholder="What's happening?"></textarea>
           <div class="PostActions">
@@ -29,7 +27,6 @@
         </form>
       </div>
     </section>
-
 
     <section id="Timeline">
       <div class="Post" *ngFor="let tweet of Tweets; let i = index;">
@@ -45,11 +42,11 @@
               <div wrap="hard">{{ tweet.Content }}</div>
             </div>
           </div>
-          <!--<div class="PostActions">
+          <div class="PostActions">
             <div></div>
             <div class="PostAction" style="text-align: right; width: fit-content;">Like</div>
             <div class="PostAction" style="text-align:center;width:fit-content;margin-left:2%;">Comment</div>
-          </div>-->
+          </div>
         </div>
       </div>
 
@@ -105,10 +102,13 @@
 
 
   <div id="AdditionalContent" class="FlexBox">
-    <section id="SearchBar" class="AdditionalContentSection" style="margin-top:0;">SearchBar</section>
-    <section id="Notifications" class="AdditionalContentSection">Notifications</section>
-    <section id="WorkoutLogs" class="AdditionalContentSection">WorkoutLogs</section>
-    <section id="NetWorth" class="AdditionalContentSection">NetWorth</section>
+    <section id="SearchBar" class="AdditionalContentSection" style="margin-top:0;" (click)="ChangeIStatus()">iStatus Preview</section>
+    <section id="Notifications" class="AdditionalContentSection">
+      <!--Notifications-->
+      <iframe id="iStatus" src="https://istatus.herokuapp.com"></iframe>
+    </section>
+    <!--<section id="WorkoutLogs" class="AdditionalContentSection">WorkoutLogs</section>
+    <section id="NetWorth" class="AdditionalContentSection">NetWorth</section>-->
   </div>
 
 

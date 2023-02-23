@@ -7,14 +7,19 @@ namespace shazebs.api.Models
         [Key]
         public long FriendsId { get; set; }
 
+        [Required]
+        public User Initiator { get; set; }
 
         [Required]
-        public long PersonId1 { get; set; }
-        public Person? Person1 { get; set; }
-
+        public User Acceptor { get; set; }
 
         [Required]
-        public long PersonId2 { get; set; }
-        public Person? Person2 { get; set; }
+        public string StartDate { get; set; }
+
+        public string EndDate { get; set; }
+
+        public Dictionary<string, string> Messages { get; set; } // message/date
+
+
     }
 }

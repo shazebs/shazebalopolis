@@ -21,11 +21,13 @@ builder.Services.AddApplicationInsightsTelemetry(config =>
 // Add Odata
 builder.Services.AddControllers().AddOData(options =>
     options.EnableQueryFeatures().AddRouteComponents("api", GetEdmModel()));
+
 // Add Odata EDM
 static IEdmModel GetEdmModel()
 {
     ODataConventionModelBuilder builder = new();
     builder.EntitySet<Tweet>("Tweets");
+    builder.EntitySet<User>("Users");
     return builder.GetEdmModel();
 }
 

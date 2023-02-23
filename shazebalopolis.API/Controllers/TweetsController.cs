@@ -23,7 +23,10 @@ namespace shazebs.api.Controllers
             _context = context;
         }
 
-        // GET: api/tweets/
+        /// <summary>
+        /// GET: api/tweets
+        /// </summary>
+        /// <returns></returns>
         [ODataRoute("Tweets")]
         [EnableQuery]
         public IQueryable<Tweet> Get()
@@ -31,15 +34,23 @@ namespace shazebs.api.Controllers
             return _context.ReadAllTweetsFromDb();
         }
 
-        // GET: api/tweets/id/
+        /// <summary>
+        /// GET: api/tweets/{key}
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         [ODataRoute("Tweets({key})")]
         [EnableQuery]
-        public SingleResult<Tweet> Get([FromODataUri]long key)
+        public SingleResult<Tweet> Get([FromODataUri] long key)
         {
             return SingleResult.Create(_context.ReadOneTweet(key));
         }
 
-        // POST: api/tweets/
+        /// <summary>
+        /// POST: api/tweets/{entity}
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         [ODataRoute("Tweets")]
         [EnableQuery]
         public async Task<IActionResult> Post([FromBody] Tweet entity)
@@ -48,12 +59,31 @@ namespace shazebs.api.Controllers
 
             var result = await _context.InsertTweetIntoDb(entity);
 
-            if (result == null)
-            {
-                return BadRequest(result); 
-            }
+            if (result == null) return BadRequest(result); 
 
             return Created(result);
+        }
+
+        /// <summary>
+        /// PUT: api/tweets/{entity}
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<IActionResult> Update([FromODataUri] long key, [FromBody] Tweet entity)
+        {
+            throw new NotImplementedException("Tweets Update endpoint not implemented.");
+        }
+
+        /// <summary>
+        /// DELETE: api/tweets/{key}
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<IActionResult> Delete([FromODataUri] long key)
+        {
+            throw new NotImplementedException("Tweets Delete endpoint not implemented.");
         }
     }
 }

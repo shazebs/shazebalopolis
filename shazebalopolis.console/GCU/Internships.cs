@@ -130,6 +130,26 @@ namespace shazebalopolis.console.GCU
             },
             new Internship()
             {
+                Company = "Apple",
+                Hyperlink = "",
+                Location = "",
+                Requirements = "",
+                SalaryRange = "",
+                Status = "APPLIED",
+                Title = "Software Engineer Intern"
+            },
+            new Internship()
+            {
+                Company = "Neuralink",
+                Hyperlink = "",
+                Location = "",
+                Requirements = "",
+                SalaryRange = "",
+                Status = "APPLIED",
+                Title = "Software Engineer Intern"
+            },
+            new Internship()
+            {
                 Company = "",
                 Hyperlink = "",
                 Location = "",
@@ -216,6 +236,9 @@ https://shazebalopolis.azurewebsites.net
             Console.ResetColor();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static void GetAllAppStatus()
         {
             var count = 1;
@@ -305,6 +328,10 @@ https://shazebalopolis.azurewebsites.net
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
         public static void DisplayDate(string value)
         {
             var values = value.Split("--");
@@ -319,6 +346,11 @@ https://shazebalopolis.azurewebsites.net
                 Console.WriteLine();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="internship"></param>
+        /// <param name="count"></param>
         public static void DisplayCompanyName(KeyValuePair<string, string> internship, int count)
         {
             var details = internship.Key.Split(':');
@@ -329,6 +361,11 @@ https://shazebalopolis.azurewebsites.net
             Console.Write($" -{details[1]} - ");
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static string GetAppType(string value)
         {
             if (value.StartsWith("APPLIED")) return "APPLIED";

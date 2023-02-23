@@ -8,10 +8,9 @@ namespace shazebs.api.Models
         public long TimelineId { get; set; }
 
         [Required]
-        public long PersonId { get; set; }
-        public Person? Person { get; set; }
+        public User User { get; set; }
 
-
-        public ICollection<Post> Posts { get; set; } = new HashSet<Post>();
+        [Required]
+        public List<Tweet> Tweets { get; set; }
     }
 }
