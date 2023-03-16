@@ -150,6 +150,16 @@ namespace shazebalopolis.console.GCU
             },
             new Internship()
             {
+                Company = "PDHI",
+                Hyperlink = "",
+                Location = "Remote",
+                Requirements = "C#, Java, ",
+                SalaryRange = "$30 an hour",
+                Status = "APPLIED",
+                Title = "Software Engineer Intern"
+            },
+            new Internship()
+            {
                 Company = "",
                 Hyperlink = "",
                 Location = "",

@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shazebalopolis.UI", "shazeb
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shazebalopolis.console", "shazebalopolis.console\shazebalopolis.console.csproj", "{DC87ACB2-C9CC-41B4-AC1D-4C36D8ABD55F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Macronutrients", "C:\Users\shaze\Documents\GCU\CST-323\Macronutrients\Macronutrients\Macronutrients.csproj", "{D08BAE7C-125B-47CF-B71E-2B08590239AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZootdServer", "C:\Users\shaze\Documents\My Web Sites\ZootdServer\ZootdServer\ZootdServer\ZootdServer.csproj", "{B6954492-DD37-4CDE-A7A7-EACE7EF849CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{DC87ACB2-C9CC-41B4-AC1D-4C36D8ABD55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC87ACB2-C9CC-41B4-AC1D-4C36D8ABD55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC87ACB2-C9CC-41B4-AC1D-4C36D8ABD55F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D08BAE7C-125B-47CF-B71E-2B08590239AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D08BAE7C-125B-47CF-B71E-2B08590239AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D08BAE7C-125B-47CF-B71E-2B08590239AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D08BAE7C-125B-47CF-B71E-2B08590239AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6954492-DD37-4CDE-A7A7-EACE7EF849CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6954492-DD37-4CDE-A7A7-EACE7EF849CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6954492-DD37-4CDE-A7A7-EACE7EF849CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6954492-DD37-4CDE-A7A7-EACE7EF849CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
