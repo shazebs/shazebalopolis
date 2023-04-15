@@ -115,7 +115,7 @@ namespace shazebalopolis.console.GCU
                 Location = "",
                 Requirements = "",
                 SalaryRange = "",
-                Status = "ninja",
+                Status = "NOT APPLIED",
                 Title = ""
             },
             new Internship()
@@ -125,7 +125,7 @@ namespace shazebalopolis.console.GCU
                 Location = "",
                 Requirements = "",
                 SalaryRange = "",
-                Status = "NOT APPLIED",
+                Status = "REJECTED",
                 Title = ""
             },
             new Internship()
@@ -160,14 +160,45 @@ namespace shazebalopolis.console.GCU
             },
             new Internship()
             {
-                Company = "",
+                Company = "SoundCloud",
                 Hyperlink = "",
-                Location = "",
-                Requirements = "",
-                SalaryRange = "",
-                Status = "",
-                Title = ""
+                Location = "Los Angeles, California",
+                Requirements = "Python, Javascript/Typescript, or Go",
+                SalaryRange = "$95K-$150K",
+                Status = "REJECTED",
+                Title = "Music Industry Software Engineer Intern"
             },
+            new Internship()
+            {
+                Company = "Apiture",
+                Hyperlink = "",
+                Location = "(Remote) Wilmington, North Carolina",
+                Requirements = "HTML, CSS, JavaScript, HTTP, RESTful APIs",
+                SalaryRange = "$62.7-$79.4K",
+                Status = "NOT APPLIED",
+                Title = "Front-End, Web Development Intern, Part-time"
+            },
+            new Internship()
+            {
+                Company = "Roo",
+                Hyperlink = "",
+                Location = "(Remote) Wilmington, North Carolina",
+                Requirements = "HTML5, CSS, React, Redux, Next.js, Express, and relational databases.",
+                SalaryRange = "$25-$30",
+                Status = "NOT APPLIED",
+                Title = "Software Engineering Intern (Part-Time/Remote)"
+            },
+            new Internship()
+            {
+                Company = "Zoom Video Communications",
+                Hyperlink = "https://zoom.wd5.myworkdayjobs.com/en-US/Zoom/job/San-Jose-CA/XMLNAME-2023-Machine-Learning-Engineer-Intern_R11446?source=Indeed",
+                Location = "(Remote) Wilmington, North Carolina",
+                Requirements = "Python, C/C++, Java, Docker, Kubernetes, and APIs",
+                SalaryRange = "$25.75-$98.50",
+                Status = "NOT APPLIED",
+                Title = "2023 Machine Learning Engineer Intern"
+            },
+
         }; 
 
 /*

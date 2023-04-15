@@ -7,9 +7,9 @@
         BinaryTreeNode<T> _root;
 
         // constructors 
-        public BinaryTree() 
+        public BinaryTree()
         {
-            _root = new BinaryTreeNode<T>(); 
+            _root = new BinaryTreeNode<T>();
         }
 
         // methods 

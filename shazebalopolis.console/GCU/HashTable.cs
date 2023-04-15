@@ -6,18 +6,18 @@
         {
             { "AAA", new HashNode("", "Shazeb", "Suhail", "Shazebs") },
         };
-        List<string> hashKeys; 
+        List<string> hashKeys;
 
 
         public static string HashCode()
         {
-            return ""; 
+            return "";
         }
     }
 
     public class HashNode
     {
-        public string Id { get; set; } 
+        public string Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string UserName { get; set; }
@@ -26,7 +26,7 @@
         public HashNode(string id, string firstName, string lastName, string userName)
         {
             Id = id;
-            FirstName = firstName; 
+            FirstName = firstName;
             LastName = lastName;
             UserName = userName;
         }

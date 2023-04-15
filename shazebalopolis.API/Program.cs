@@ -1,10 +1,10 @@
-using Microsoft.EntityFrameworkCore;
-using shazebs.api;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.OData;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OData.Edm;
 using Microsoft.OData.ModelBuilder;
+using shazebs.api;
 using shazebs.api.Models;
-using Microsoft.AspNetCore.OData;
 using System.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);

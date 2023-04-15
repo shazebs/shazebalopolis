@@ -32,7 +32,7 @@ namespace shazebalopolis.API.Controllers
                 throw ex;
             }
 
-            return false; 
+            return false;
         }
     }
 }

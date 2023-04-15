@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using shazebs.api.Models; 
+using shazebs.api.Models;
 
 namespace shazebs.api
 {
@@ -8,7 +8,7 @@ namespace shazebs.api
         public DbSet<Tweet> Tweets { get; set; }
         public DbSet<User> Users { get; set; }
 
-        public DataContext(DbContextOptions<DataContext> options): base(options) 
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
         }
 
@@ -106,7 +106,7 @@ namespace shazebs.api
                 var match = Tweets.FirstOrDefault(x => x.TweetId == key);
                 if (match != null)
                 {
-                    Tweets.Remove(match); 
+                    Tweets.Remove(match);
                     await SaveChangesAsync();
                     return true;
                 }

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shazebalopolis.UI", "shazeb
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shazebalopolis.console", "shazebalopolis.console\shazebalopolis.console.csproj", "{DC87ACB2-C9CC-41B4-AC1D-4C36D8ABD55F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Macronutrients", "C:\Users\shaze\Documents\GCU\CST-323\Macronutrients\Macronutrients\Macronutrients.csproj", "{72EEC90C-070E-46D8-B3F0-63FACB86D801}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DC87ACB2-C9CC-41B4-AC1D-4C36D8ABD55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC87ACB2-C9CC-41B4-AC1D-4C36D8ABD55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC87ACB2-C9CC-41B4-AC1D-4C36D8ABD55F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72EEC90C-070E-46D8-B3F0-63FACB86D801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72EEC90C-070E-46D8-B3F0-63FACB86D801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72EEC90C-070E-46D8-B3F0-63FACB86D801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72EEC90C-070E-46D8-B3F0-63FACB86D801}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

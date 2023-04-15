@@ -1,12 +1,12 @@
-﻿using shazebs.api.Models;
+﻿using Microsoft.AspNet.OData.Routing;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNet.OData.Routing;
 using Microsoft.AspNetCore.OData.Formatter;
 using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Results;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
-using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Authorization;
+using shazebs.api.Models;
 
 namespace shazebs.api.Controllers
 {
@@ -59,7 +59,7 @@ namespace shazebs.api.Controllers
 
             var result = await _context.InsertTweetIntoDb(entity);
 
-            if (result == null) return BadRequest(result); 
+            if (result == null) return BadRequest(result);
 
             return Created(result);
         }
