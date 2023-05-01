@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using shazebalopolis.console.Models;
 
 namespace shazebalopolis.console.GCU
@@ -9,20 +7,20 @@ namespace shazebalopolis.console.GCU
     {
         public static Dictionary<string, string> internships = new Dictionary<string, string>
         {
-            { "Dropbox: $8,500 per month, Remote, iOS/Android", "APPLIED--1/30/2023" },
-            { "Viasat: Remote, Carlsbad California, up to $74.1k/year, VICE Team ", "APPLIED" },
+            { "Dropbox: $8,500 per month, Remote, iOS/Android", "REJECTED--1/30/2023" },
+            { "Viasat: Remote, Carlsbad California, up to $74.1k/year, VICE Team ", "REJECTED" },
             { "Sony Playstation: ", "NOT APPLIED" },
             { "Instagram: ", "NOT APPLIED" },
             { "Snapchat: ", "NOT APPLIED" },
             { "SpaceX: Spring 2023 Software Engineering Intern", "APPLIED" },
             { "SpaceX: Summer 2023 Software Engineering Intern", "APPLIED" },
             { "NASA: ", "NOT APPLIED" },
-            { "Twitch: ", "APPLIED" },
-            { "TikTok: (Creative Tools) Team", "APPLIED" },
+            { "Twitch: ", "REJECTED" },
+            { "TikTok: (Creative Tools) Team", "REJECTED" },
             { "TikTok: (Ads Platform & Interface) Team", "REJECTED--1/27/2023" },
             { "Intel: ", "REJECTED" },
             { "Netflix: ", "APPLIED" },
-            { "Activision: Game Development", "APPLIED" },
+            { "Activision: Game Development", "REJECTED" },
             { "Tencent: Tools Programmer Intern, $111,878 salary", "APPLIED" },
             { "Gamestop: Mechanical/Electrical Engineer Internship, $57,416 salary", "APPLIED" },
             { "HP: $80,605 salary", "APPLIED" },
@@ -32,32 +30,32 @@ namespace shazebalopolis.console.GCU
             { "Keysight Technologies: R&D Software Engineer Internship $29.30-$38.32, C#", "APPLIED--1/22/2022" },
             { "W. L. Gore & Associates: 2023 IT Architect Summer Internship, $72 .8k-$92.2k, C#", "APPLIED--1/22/2022" },
             { "Oracle: Software Engineer Intern - UNCF, $66.9k-$84.7k, C#", "NOT APPLIED--1/22/2022" },
-            { "Affinitiv: Quality Assurance (QA) Engineer Intern, C#", "INTERVIEW--1/22/2022" },
-            { "PWC (Price Waterhouse Coopers): $56k-$71k, C#", "APPLIED--1/22/2022" },
+            { "Affinitiv: Quality Assurance (QA) Engineer Intern, C#", "REJECTED--1/22/2022" },
+            { "PWC (Price Waterhouse Coopers): $56k-$71k, C#", "REJECTED--1/22/2022" },
             { "ECS: $67.7k-$85.7k, C#", "APPLIED--1/22/2022" },
-            { "UKG (Ultimate Kronos Group): $65k-$82.3k, C#", "NOT APPLIED--1/22/2022" },
+            { "UKG (Ultimate Kronos Group): $65k-$82.3k, C#", "REJECTED--1/22/2022" },
             { "Medidata Solutions: Rave Platform Technology Summer Intern, New York, $34-$37, C#", "APPLIED--1/22/2022" },
             { "Auctane Careers: Software Engineering Intern, Austin Texas, $59.1k-$74.9k, C#", "REJECTED--1/22/2022" },
             { "Intuitive: Manufacturing Software Engineer Intern, Sunnyvale California, $34-$59, C#", "APPLIED--1/22/2022" },
-            { "PACCAR: Software Engineer - Test Engineering, Mount Vernon Washington, $30, C#", "APPLIED--1/22/2022" },
+            { "PACCAR: Software Engineer - Test Engineering, Mount Vernon Washington, $30, C#", "REJECTED--1/22/2022" },
             { "Cvent: Application Security Intern, Tysons Corner Virginia, $65.1k-$82.4k, C#", "APPLIED--1/22/2022" },
             { "Tesla: Software Engineering Intern - Vehicle Engineering, Austin Texas, $75.5k-$95.6k, C#", "APPLIED--1/22/2022" },
             { "UWM (United Wholesale Mortgage): Application Development, Pontiac Michigan, $56.2k-$71.2k, C#", "APPLIED--1/22/2022" },
-            { "TikTok: Software Engineer Intern (Cross Platform), Mountain View California, $45/hr, C#", "NOT APPLIED--1/22/2022" },
-            { "Nintendo of America Inc.: CPU Debugger Software Engineer (NTD), Redmond Washington, $40/hr, C#", "APPLIED--1/22/2022" },
-            { "Nintendo of America Inc.: GPU Tools Software Engineer (NTD), Redmond Washington, $40/hr, C#", "APPLIED--1/22/2022" },
+            { "TikTok: Software Engineer Intern (Cross Platform), Mountain View California, $45/hr, C#", "REJECTED--1/22/2022" },
+            { "Nintendo of America Inc.: CPU Debugger Software Engineer (NTD), Redmond Washington, $40/hr, C#", "REJECTED--1/22/2022" },
+            { "Nintendo of America Inc.: GPU Tools Software Engineer (NTD), Redmond Washington, $40/hr, C#", "REJECTED--1/22/2022" },
             { "ByteDance: Software Engineer Intern (XR Engine adn Runtime), Mountain View California, $75.7k-$95.9k, C#", "NOT APPLIED--1/22/2022" },
             { "UiPath: Software Engineer Intern, Bellevue Washington, $68.7k-$86.9k, C#", "APPLIED--1/22/2022" },
             { "Fastly: Software Engineer Intern, San Francisco California, $30-$35, JavaScript", "REJECTED--1/22/2022" },
             { "Meta: Front End Engineer Intern, New York NY, $82k-$104k, JavaScript", "APPLIED--1/22/2022" },
             { "Spotify: Back End Engineer Intern, New York NY, $33, JavaScript", "APPLIED--1/22/2022" },
-            { "Discord: Back End Engineer Intern x2 - Native Framework & Tools, Remote San Francisco California, $67, JavaScript", "APPLIED--1/22/2022" },
+            { "Discord: Back End Engineer Intern x2 - Native Framework & Tools, Remote San Francisco California, $67, JavaScript", "REJECTED--1/22/2022" },
             { "CLEAR: Software Engineer Intern (Intern Cohort), Austin Texas, $55.7k-$70.5k, JavaScript", "REJECTED--1/22/2022" },
             { "General Motors: Software Engineer Intern, Warren Michigan, $54.2k-$68.7k, JavaScript", "REJECTED--1/22/2022" },
             { "FanDuel: Software Engineer Intern, Atlanta Georgia, $104k-$132k, JavaScript", "APPLIED--1/22/2022" },
             { "West Monroe: Software Engineer Intern - Product Experience & Engineering Lab, Remote United States, $39, JavaScript", "NOT APPLIED--1/22/2022" },
             { "Zoox: Frontend Software Engineer Intern - Driving Tools, Foster City California, $6,500-$9,500, JavaScript", "NOT APPLIED--1/22/2022" },
-            { "Portland General Electric: JavaScript/React, $16.00-$36.00", "APPLIED--1/30/2023" },
+            { "Portland General Electric: JavaScript/React, $16.00-$36.00", "REJECTED--1/30/2023" },
             { "IGT: SWE Intern", "APPLIED--1/30/2023" },
             { "U.S. Xpress: Software Engineer Intern, C#/JavaScript/Java", "APPLIED--1/30/2023" },
             { "CCC Intelligent Solutions: Software Engineer Intern, Java/Spring/Angular/Vue", "APPLIED--1/30/2023"},
@@ -198,7 +196,26 @@ namespace shazebalopolis.console.GCU
                 Status = "NOT APPLIED",
                 Title = "2023 Machine Learning Engineer Intern"
             },
-
+            new Internship()
+            {
+                Company = "Anywhere Real Estate Inc",
+                Hyperlink = "https://www.dice.com/job-detail/8491f69e-4aba-4b45-808a-3121844d0709?searchlink=search%2F%3Fq%3Dsoftware%2520intern%26countryCode%3DUS%26radius%3D30%26radiusUnit%3Dmi%26page%3D1%26pageSize%3D20%26filters.postedDate%3DSEVEN%26filters.isRemote%3Dtrue%26language%3Den%26eid%3DS2Q_&searchId=3aba5ae8-fc61-4313-b03c-0a1d029bfd79",
+                Location = "Remote",
+                Requirements = "",
+                SalaryRange = "",
+                Status = "APPLIED",
+                Title = "Associate Engineer Software Engineering"
+            },
+            new Internship()
+            {
+                Company = "Anywhere Real Estate Inc",
+                Hyperlink = "https://www.dice.com/job-detail/8491f69e-4aba-4b45-808a-3121844d0709?searchlink=search%2F%3Fq%3Dsoftware%2520intern%26countryCode%3DUS%26radius%3D30%26radiusUnit%3Dmi%26page%3D1%26pageSize%3D20%26filters.postedDate%3DSEVEN%26filters.isRemote%3Dtrue%26language%3Den%26eid%3DS2Q_&searchId=3aba5ae8-fc61-4313-b03c-0a1d029bfd79",
+                Location = "Remote",
+                Requirements = "",
+                SalaryRange = "",
+                Status = "APPLIED",
+                Title = "Associate Engineer Software Engineering"
+            },
         }; 
 
 /*
