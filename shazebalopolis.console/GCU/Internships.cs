@@ -66,155 +66,175 @@ namespace shazebalopolis.console.GCU
 
         public static List<Internship> internshipsList = new List<Internship>()
         {
+            //new Internship()
+            //{
+            //    Company = "Yahoo",
+            //    Hyperlink = "https://ouryahoo.wd5.myworkdayjobs.com/en-US/careers/job/United-States-of-America---Remote/Software-Engineering-Intern_JR0021555?source=Linkedin",
+            //    Location = "Remote",
+            //    Requirements = "MS or PhD student, Java (or Scala), Sql/NoSql",
+            //    SalaryRange = "$45,760.00 - $135,200.00/yr",
+            //    Status = "NOT APPLIED",
+            //    Title = "Software Engineering Intern"
+            //},
+            //new Internship()
+            //{
+            //    Company = "Alarm.com",
+            //    Hyperlink = "https://boards.greenhouse.io/alarmcom/jobs/6599230002?gh_src=7778490b2us",
+            //    Location = " Centennial, Colorado",
+            //    Requirements = "JavaScript, Node.js, Ember.js, C#.NET, SQL Server, iOS, Android",
+            //    SalaryRange = "$22.00-$32.00",
+            //    Status = "NOT APPLIED",
+            //    Title = "Software Engineering Intern"
+            //},
+            //new Internship()
+            //{
+            //    Company = "UWM",
+            //    Hyperlink = String.Empty,
+            //    Location = "",
+            //    Requirements = "",
+            //    SalaryRange = "",
+            //    Status = "REJECTED",
+            //    Title = ""
+            //},
+            //new Internship()
+            //{
+            //    Company = "TikTok",
+            //    Hyperlink = "",
+            //    Location = "",
+            //    Requirements = "",
+            //    SalaryRange = "",
+            //    Status = "REJECTED",
+            //    Title = ""
+            //},
+            //new Internship()
+            //{
+            //    Company = "Oracle",
+            //    Hyperlink = "",
+            //    Location = "",
+            //    Requirements = "",
+            //    SalaryRange = "",
+            //    Status = "NOT APPLIED",
+            //    Title = ""
+            //},
+            //new Internship()
+            //{
+            //    Company = "Discord",
+            //    Hyperlink = "",
+            //    Location = "",
+            //    Requirements = "",
+            //    SalaryRange = "",
+            //    Status = "REJECTED",
+            //    Title = ""
+            //},
+            //new Internship()
+            //{
+            //    Company = "Apple",
+            //    Hyperlink = "",
+            //    Location = "",
+            //    Requirements = "",
+            //    SalaryRange = "",
+            //    Status = "APPLIED",
+            //    Title = "Software Engineer Intern"
+            //},
+            //new Internship()
+            //{
+            //    Company = "Neuralink",
+            //    Hyperlink = "",
+            //    Location = "",
+            //    Requirements = "",
+            //    SalaryRange = "",
+            //    Status = "APPLIED",
+            //    Title = "Software Engineer Intern"
+            //},
+            //new Internship()
+            //{
+            //    Company = "PDHI",
+            //    Hyperlink = "",
+            //    Location = "Remote",
+            //    Requirements = "C#, Java, ",
+            //    SalaryRange = "$30 an hour",
+            //    Status = "APPLIED",
+            //    Title = "Software Engineer Intern"
+            //},
+            //new Internship()
+            //{
+            //    Company = "SoundCloud",
+            //    Hyperlink = "",
+            //    Location = "Los Angeles, California",
+            //    Requirements = "Python, Javascript/Typescript, or Go",
+            //    SalaryRange = "$95K-$150K",
+            //    Status = "REJECTED",
+            //    Title = "Music Industry Software Engineer Intern"
+            //},
+            //new Internship()
+            //{
+            //    Company = "Apiture",
+            //    Hyperlink = "",
+            //    Location = "(Remote) Wilmington, North Carolina",
+            //    Requirements = "HTML, CSS, JavaScript, HTTP, RESTful APIs",
+            //    SalaryRange = "$62.7-$79.4K",
+            //    Status = "NOT APPLIED",
+            //    Title = "Front-End, Web Development Intern, Part-time"
+            //},
+            //new Internship()
+            //{
+            //    Company = "Roo",
+            //    Hyperlink = "",
+            //    Location = "(Remote) Wilmington, North Carolina",
+            //    Requirements = "HTML5, CSS, React, Redux, Next.js, Express, and relational databases.",
+            //    SalaryRange = "$25-$30",
+            //    Status = "NOT APPLIED",
+            //    Title = "Software Engineering Intern (Part-Time/Remote)"
+            //},
+            //new Internship()
+            //{
+            //    Company = "Zoom Video Communications",
+            //    Hyperlink = "https://zoom.wd5.myworkdayjobs.com/en-US/Zoom/job/San-Jose-CA/XMLNAME-2023-Machine-Learning-Engineer-Intern_R11446?source=Indeed",
+            //    Location = "(Remote) Wilmington, North Carolina",
+            //    Requirements = "Python, C/C++, Java, Docker, Kubernetes, and APIs",
+            //    SalaryRange = "$25.75-$98.50",
+            //    Status = "NOT APPLIED",
+            //    Title = "2023 Machine Learning Engineer Intern"
+            //},
+            //new Internship()
+            //{
+            //    Company = "Anywhere Real Estate Inc",
+            //    Hyperlink = "https://www.dice.com/job-detail/8491f69e-4aba-4b45-808a-3121844d0709?searchlink=search%2F%3Fq%3Dsoftware%2520intern%26countryCode%3DUS%26radius%3D30%26radiusUnit%3Dmi%26page%3D1%26pageSize%3D20%26filters.postedDate%3DSEVEN%26filters.isRemote%3Dtrue%26language%3Den%26eid%3DS2Q_&searchId=3aba5ae8-fc61-4313-b03c-0a1d029bfd79",
+            //    Location = "Remote",
+            //    Requirements = "",
+            //    SalaryRange = "",
+            //    Status = "APPLIED",
+            //    Title = "Associate Engineer Software Engineering"
+            //},
             new Internship()
             {
-                Company = "Yahoo",
-                Hyperlink = "https://ouryahoo.wd5.myworkdayjobs.com/en-US/careers/job/United-States-of-America---Remote/Software-Engineering-Intern_JR0021555?source=Linkedin",
-                Location = "Remote",
-                Requirements = "MS or PhD student, Java (or Scala), Sql/NoSql",
-                SalaryRange = "$45,760.00 - $135,200.00/yr",
-                Status = "NOT APPLIED",
-                Title = "Software Engineering Intern"
-            },
-            new Internship()
-            {
-                Company = "Alarm.com",
-                Hyperlink = "https://boards.greenhouse.io/alarmcom/jobs/6599230002?gh_src=7778490b2us",
-                Location = " Centennial, Colorado",
-                Requirements = "JavaScript, Node.js, Ember.js, C#.NET, SQL Server, iOS, Android",
-                SalaryRange = "$22.00-$32.00",
-                Status = "NOT APPLIED",
-                Title = "Software Engineering Intern"
-            },
-            new Internship()
-            {
-                Company = "UWM",
-                Hyperlink = String.Empty,
-                Location = "",
+                Company = "Melissa Global Intelligence",
+                Hyperlink = "",
+                Location = "Hybrid Remote in Rancho Santa Margarita, CA",
                 Requirements = "",
-                SalaryRange = "",
-                Status = "APPLIED",
-                Title = ""
+                SalaryRange = "$30-$35",
+                Status = "REJECTED - 2023/5/24 12:00:00",
+                Title = "Sales Engineer I / Software QA Engineer (FT)"
             },
             new Internship()
             {
-                Company = "TikTok",
-                Hyperlink = "",
-                Location = "",
+                Company = "Property Matrix",
+                Hyperlink = "https://www.propertymatrix.com/careers/entry-level-software-developer",
+                Location = "Culver City, CA",
                 Requirements = "",
-                SalaryRange = "",
-                Status = "REJECTED",
-                Title = ""
+                SalaryRange = "$60k – $75k",
+                Status = "APPLIED - 2023/5/24 00:55:00",
+                Title = "Entry Level Software Developer"
             },
             new Internship()
             {
-                Company = "Oracle",
-                Hyperlink = "",
-                Location = "",
+                Company = "SpaceX",
+                Hyperlink = "https://boards.greenhouse.io/spacex/jobs/6746720002?gh_jid=6746720002&gh_src=a76cb8f12us",
+                Location = "Hawthorne, CA 90250",
                 Requirements = "",
-                SalaryRange = "",
-                Status = "NOT APPLIED",
-                Title = ""
-            },
-            new Internship()
-            {
-                Company = "Discord",
-                Hyperlink = "",
-                Location = "",
-                Requirements = "",
-                SalaryRange = "",
-                Status = "REJECTED",
-                Title = ""
-            },
-            new Internship()
-            {
-                Company = "Apple",
-                Hyperlink = "",
-                Location = "",
-                Requirements = "",
-                SalaryRange = "",
-                Status = "APPLIED",
-                Title = "Software Engineer Intern"
-            },
-            new Internship()
-            {
-                Company = "Neuralink",
-                Hyperlink = "",
-                Location = "",
-                Requirements = "",
-                SalaryRange = "",
-                Status = "APPLIED",
-                Title = "Software Engineer Intern"
-            },
-            new Internship()
-            {
-                Company = "PDHI",
-                Hyperlink = "",
-                Location = "Remote",
-                Requirements = "C#, Java, ",
-                SalaryRange = "$30 an hour",
-                Status = "APPLIED",
-                Title = "Software Engineer Intern"
-            },
-            new Internship()
-            {
-                Company = "SoundCloud",
-                Hyperlink = "",
-                Location = "Los Angeles, California",
-                Requirements = "Python, Javascript/Typescript, or Go",
-                SalaryRange = "$95K-$150K",
-                Status = "REJECTED",
-                Title = "Music Industry Software Engineer Intern"
-            },
-            new Internship()
-            {
-                Company = "Apiture",
-                Hyperlink = "",
-                Location = "(Remote) Wilmington, North Carolina",
-                Requirements = "HTML, CSS, JavaScript, HTTP, RESTful APIs",
-                SalaryRange = "$62.7-$79.4K",
-                Status = "NOT APPLIED",
-                Title = "Front-End, Web Development Intern, Part-time"
-            },
-            new Internship()
-            {
-                Company = "Roo",
-                Hyperlink = "",
-                Location = "(Remote) Wilmington, North Carolina",
-                Requirements = "HTML5, CSS, React, Redux, Next.js, Express, and relational databases.",
-                SalaryRange = "$25-$30",
-                Status = "NOT APPLIED",
-                Title = "Software Engineering Intern (Part-Time/Remote)"
-            },
-            new Internship()
-            {
-                Company = "Zoom Video Communications",
-                Hyperlink = "https://zoom.wd5.myworkdayjobs.com/en-US/Zoom/job/San-Jose-CA/XMLNAME-2023-Machine-Learning-Engineer-Intern_R11446?source=Indeed",
-                Location = "(Remote) Wilmington, North Carolina",
-                Requirements = "Python, C/C++, Java, Docker, Kubernetes, and APIs",
-                SalaryRange = "$25.75-$98.50",
-                Status = "NOT APPLIED",
-                Title = "2023 Machine Learning Engineer Intern"
-            },
-            new Internship()
-            {
-                Company = "Anywhere Real Estate Inc",
-                Hyperlink = "https://www.dice.com/job-detail/8491f69e-4aba-4b45-808a-3121844d0709?searchlink=search%2F%3Fq%3Dsoftware%2520intern%26countryCode%3DUS%26radius%3D30%26radiusUnit%3Dmi%26page%3D1%26pageSize%3D20%26filters.postedDate%3DSEVEN%26filters.isRemote%3Dtrue%26language%3Den%26eid%3DS2Q_&searchId=3aba5ae8-fc61-4313-b03c-0a1d029bfd79",
-                Location = "Remote",
-                Requirements = "",
-                SalaryRange = "",
-                Status = "APPLIED",
-                Title = "Associate Engineer Software Engineering"
-            },
-            new Internship()
-            {
-                Company = "Anywhere Real Estate Inc",
-                Hyperlink = "https://www.dice.com/job-detail/8491f69e-4aba-4b45-808a-3121844d0709?searchlink=search%2F%3Fq%3Dsoftware%2520intern%26countryCode%3DUS%26radius%3D30%26radiusUnit%3Dmi%26page%3D1%26pageSize%3D20%26filters.postedDate%3DSEVEN%26filters.isRemote%3Dtrue%26language%3Den%26eid%3DS2Q_&searchId=3aba5ae8-fc61-4313-b03c-0a1d029bfd79",
-                Location = "Remote",
-                Requirements = "",
-                SalaryRange = "",
-                Status = "APPLIED",
-                Title = "Associate Engineer Software Engineering"
+                SalaryRange = "$120k – $145k",
+                Status = "APPLIED - 2023/5/24 00:55:00",
+                Title = "Software Engineer (Space Operations)"
             },
         }; 
 
@@ -254,27 +274,31 @@ https://shazebalopolis.azurewebsites.net
         {
             if (true)
             {
-                GetApplied();
-                GetNotApplied();
-                GetRejectedApps();
+                //GetApplied();
+                //GetNotApplied();
+                //GetRejectedApps();
                 outputInternshipsList(internshipsList);
             }
             else GetAllAppStatus(); 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="status"></param>
         public static void ColorWheel(string status)
         {
-            if (status == "APPLIED")
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-            }
-            else if (status == "REJECTED")
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-            }
-            else if (status == "NOT APPLIED")
+            if (status.Contains("NOT APPLIED"))
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
+            }
+            else if (status.Contains("APPLIED"))
+            {
+                Console.ForegroundColor = ConsoleColor.Cyan;
+            }
+            else if (status.Contains("REJECTED"))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
             }
             else Console.ResetColor(); 
         }
